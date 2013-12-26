@@ -2,7 +2,12 @@
 layout: post
 title:  "New Blog!"
 date:   2013-12-26 11:15:08
-categories: jekyll haml compass static-webpage
+tags:
+- jekyll
+- github pages
+- haml
+- compass
+- static webpage
 ---
 
 Besides trying out Jekyll, github pages, haml, compass, statically-served webpages, etc... I thought it might be nice to have a place for my computer science-related thoughts. Here you can find my projects, ideas, ramblings, insights, failures, and more.
