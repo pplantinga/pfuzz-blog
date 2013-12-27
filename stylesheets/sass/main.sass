@@ -6,15 +6,16 @@
 
 /* Global reset */
 @import compass/reset
+@import compass/css3
+@import compass/typography/links/link-colors
 
 html, body
   height: 100%
 
 body
-  background-color: #FFF
-  font: 13.34px Helvetica, Arial, sans-serif
-  font-size: small
-  text-align: center
+  background-color: #222
+  color: #ccc
+  font: 15px sans-serif
 
 h1, h2, h3, h4, h5, h6
   font-size: 100% 
@@ -23,15 +24,11 @@ h1
   margin-bottom: 1em
 p
   margin: 1em 0
-ul li
-  list-style: disc
+ul
+  list-style-type: disc
 
 a
-  color: #00a
-a:hover
-  color: #000
-a:visited
-  color: #a0a
+  +link-colors(#78c, #acf, #faf, #aaa, #ffa)
 
 /*****************************************************************************/
 /*
@@ -48,7 +45,7 @@ a:visited
 .posts span
   color: #aaa
   font-family: Monaco, "Courier New", monospace
-  font-size: 80%
+  font-size: 85%
 
 /*****************************************************************************/
 /*
@@ -57,49 +54,44 @@ a:visited
 /*****************************************************************************/
 
 .site
-  font-size: 115%
-  text-align: justify
   width: 42em
   margin: 3em auto 2em
   line-height: 1.5em
 
-.header a
-  font-weight: bold
-  text-decoration: none
+.header
+  border-bottom: 1px solid #111
+  margin-bottom: 1em
+  a
+    font-weight: bold
+    text-decoration: none
+  a:hover
+    text-decoration: underline
 
 .title
   display: inline-block
-  margin-bottom: 2em
+  margin-bottom: 1em
 
 .title a
-  color: #a00
-
-.title a:hover
-  color: #000
+  color: #ccc
 
 .header a.extra
   color: #aaa
   margin-left: 1em
 
-.header a.extra:hover
-  color: #000
-
 .meta
-  color: #aaa
+  color: #888
+  font-size: 85%
 
 .footer
-  font-size: 80%
-  color: #666
-  border-top: 4px solid #eee
+  color: #888
+  font-size: 85%
+  border-top: 1px solid #111
   margin-top: 2em
   overflow: hidden
 
 .footer .contact
   float: left
   margin-right: 3em
-
-.footer .contact a
-  color: #8085C1
 
 .footer .rss
   margin-top: 1.1em
