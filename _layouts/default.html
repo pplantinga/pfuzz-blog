@@ -6,11 +6,8 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- Preprocess, conglomerate, compress CSS -->
-        {% css_asset_tag global %}
-        - /_assets/stylesheets/syntax.css.sass
-        - /_assets/stylesheets/main.css.sass
-        {% endcss_asset_tag %}
+				<link rel="stylesheet" type="text/css" href="/stylesheets/css/main.css" />
+				<link rel="stylesheet" type="text/css" href="/stylesheets/css/syntax.css" />
     </head>
     <body>
 
