@@ -19,4 +19,4 @@ Resources on the things I mentioned:
 * [Github pages](http://pages.github.com)
 * [Haml](http://haml.info)
 * [Compass](http://compass-style.org)
-* [Static webpages](https://en.wikipedia.org/wiki/Static_web_page)
+* [Static webpages](/archives/static-webpages.html)

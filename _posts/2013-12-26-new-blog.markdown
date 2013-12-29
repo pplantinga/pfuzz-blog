@@ -4,6 +4,7 @@ title:  "New Blog!"
 date:   2013-12-26 11:15:08
 tags:
 - hello world
+- d programming language
 ---
 
 What does every computer scientist do when they try a new technology?
