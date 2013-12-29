@@ -2,30 +2,19 @@
 layout: default
 ---
 <h2>{{ page.title }}</h2>
-<p class="meta">Posted on {{ page.date | date_to_string }} and tagged: {{ page.tags | array_to_sentence_string }}</p>
-
-<div class="post">
-{{ content }}
+{% if page.date %}
+<p class='meta'>Posted on {{ page.date | date_to_string }}</p>
+{% endif %}
+<div class='post'>
+  {{ content }}
 </div>
-
+{% if page.tags %}
+<p class='meta'>Tagged: {{ page.tags | array_to_sentence_string }}</p>
+{% endif %}
 <!-- START: Livefyre Embed -->
-<div id="livefyre-comments"></div>
-<script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-<script type="text/javascript">
-(function () {
-    var articleId = fyre.conv.load.makeArticleId(null);
-    fyre.conv.load({}, [{
-        el: 'livefyre-comments',
-        network: "livefyre.com",
-        siteId: "350247",
-        articleId: articleId,
-        signed: false,
-        collectionMeta: {
-            articleId: articleId,
-            url: fyre.conv.load.makeCollectionUrl(),
-        }
-    }], function() {});
-}());
+<div id='livefyre-comments'></div>
+<script src='http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js' type='text/javascript'></script>
+<script type='text/javascript'>
+  (function () {&#x000A;  var articleId = fyre.conv.load.makeArticleId(null);&#x000A;  fyre.conv.load({}, [{&#x000A;      el: 'livefyre-comments',&#x000A;      network: "livefyre.com",&#x000A;      siteId: "350247",&#x000A;      articleId: articleId,&#x000A;      signed: false,&#x000A;      collectionMeta: {&#x000A;          articleId: articleId,&#x000A;          url: fyre.conv.load.makeCollectionUrl(),&#x000A;      }&#x000A;  }], function() {});&#x000A;}());
 </script>
 <!-- END: Livefyre Embed -->
-            

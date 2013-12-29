@@ -1,0 +1,39 @@
+:plain
+  ---
+  layout: default
+  ---
+
+%h2 {{ page.title }}
+
+{% if page.date %}
+%p.meta Posted on {{ page.date | date_to_string }}
+{% endif %}
+
+.post
+  {{ content }}
+
+{% if page.tags %}
+%p.meta Tagged: {{ page.tags | array_to_sentence_string }}
+{% endif %}
+
+/ START: Livefyre Embed
+#livefyre-comments
+%script(type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js")
+%script(type="text/javascript")
+  :preserve
+    (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "350247",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
+              articleId: articleId,
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+    }());
+/ END: Livefyre Embed
+            
