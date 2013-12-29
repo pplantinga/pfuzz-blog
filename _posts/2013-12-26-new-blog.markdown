@@ -3,19 +3,20 @@ layout: post
 title:  "New Blog!"
 date:   2013-12-26 11:15:08
 tags:
-- jekyll
-- github pages
-- compass
-- static webpages
+- hello world
 ---
 
-Besides trying out Jekyll, github pages, compass, static webpages, etc. I thought it might be nice to have a place for my computer science-related thoughts. Here you can find my projects, ideas, ramblings, insights, failures, and more.
+What does every computer scientist do when they try a new technology?
 
-This blog is named "P-Fuzz" after my super-cute purple fuzzy hand-warmer (that happens to look a lot like the logo). Of course, it also stands for all of the Peter-brain fuzz that makes it into the posts on this blog. Hopefully the process makes my thoughts clearer than fuzz.
+Yell "Hello, world!" of course!
 
-Resources on the things I mentioned:
+{% highlight d %}
+import std.stdio;
 
-* [Jekyll](http://jekyllrb.com)
-* [Github pages](http://pages.github.com)
-* [Compass](http://compass-style.org)
-* [Static webpages](https://en.wikipedia.org/wiki/Static_web_page)
+void main()
+{
+	writeln( "Hello, world!" );
+}
+{% endhighlight %}
+
+If you want to learn more about the purpose of this blog, check out the [about page](/about/).
