@@ -1,0 +1,36 @@
+!!!
+%html
+  %head
+    %title {{ page.title }}
+    %meta(charset="utf-8")
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    %meta(name="viewport" content="width=device-width")
+    %link(rel="stylesheet" type="text/css" href="/stylesheets/css/main.css")
+    %link(rel="stylesheet" type="text/css" href="/stylesheets/css/syntax.css")
+    %link(rel="shortcut icon" href="/favicon.ico")
+    %link(href="http://fonts.googleapis.com/css?family=Alegreya+Sans:300" rel="stylesheet" type="text/css")
+    %link(href="http://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet" type="text/css")
+  %body
+    .site
+      .header
+        %a(href="/")
+          %img.header-icon(src="/p-fuzz.png")
+        %h2.title
+          %a(href="/") {{ site.name }}
+        %a.extra(href="/about/") about
+        %a.extra(href="/archives/") archives
+        %a.extra(href="/projects/") projects
+
+      {{ content }}
+
+      .footer
+        .contact
+          %p
+            Peter Massey-Plantinga
+            %br
+            Web Developer Extraordanaire
+        .contact
+          %p
+            %a(href="https://github.com/pplantinga") github.com/pplantinga
+            %br
+            %a(href="http://massey-plantinga.com") massey-plantinga.com
