@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '"Hello, World" Delight'
-date: 30 Dec 2013 14:31:00
+date: 4 Jan 2014 12:00:00
 tags:
 - delight
 - hello world
