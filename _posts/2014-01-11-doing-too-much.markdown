@@ -7,7 +7,7 @@ tags:
 - russian students
 ---
 
-I've been working on Delight, but no new language features have happened for awhile. I was going to add the function declaration syntax, but I realized in the middle of it that the changes I were making weren't all related to the syntax. I couldn't keep all the projects straight in my head, so I had to undo all my changes, and go on a refactor binge.
+I've been working on Delight, but no new language features have happened for awhile. I was going to add the function declaration syntax, but I realized in the middle of it that the changes I were making weren't all related to the syntax. I couldn't keep all the projects straight in my head, so I had to undo all my changes, and go on a refactor binge. This had the added benefit of keeping all the changes separate in the git commit log.
 
 What's ironic is that in real life too I've been doing too much. I offered to teach English to a bunch of Russian students even though I still had grading to do.
 
