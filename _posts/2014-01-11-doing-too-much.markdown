@@ -14,11 +14,11 @@ What's ironic is that in real life too I've been doing too much. I offered to te
 I'm finally to the end of both the teaching and the refactoring, so now it's back to work on function declaration syntax. Here's what it's going to look like for now:
 
 {% highlight D %}
-add function: int a, b -> int
+function add(int a, b -> int):
 	return a + b
 
-main procedure:
-	int c = add( a, b )
+procedure main:
+	int c = add(a, b)
 {% endhighlight %}
 
 Since D has type inference, you'll be able to leave off the return type. And if you replace the "int" with "T" it will automatically become a template.
