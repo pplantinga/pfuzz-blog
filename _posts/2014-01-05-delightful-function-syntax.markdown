@@ -47,3 +47,15 @@ max 5 2 * 4 -- returns 20
 {% endhighlight %}
 
 Let me know what you think!
+
+**Edit:** I ended up with some of each. This is still in flux though, so feel free to leave comments.
+
+{% highlight D %}
+function add(int a, b -> int):
+	return a + b
+
+procedure main:
+	int c = add(a, b)
+{% endhighlight %}
+
+I kept parentheses around function calls because the spaces don't make it clear what is inside the function and what is not. Also, I'm trying to stay just somewhat faithful to python/D syntax. See post on [doing too much](/2014/01/11/doing-too-much.html) for more details.
