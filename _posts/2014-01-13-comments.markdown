@@ -1,0 +1,43 @@
+---
+layout: post
+title: Comments
+date: 13 Jan 2014 11:45:00
+tags:
+- delight
+- comments
+- whitespace
+---
+
+Having finished [function syntax](/2014/01/05/delightful-function-syntax.html) I'm moving on to comments. The problem with comments in C-style syntax is that they don't nest. D tries to fix this by adding nestable comments /+ +/ but this means that D has 6 different ways to do comments. [D's article on documentation](http://dlang.org/ddoc.html) shows all the variations on these themes.
+
+{% highlight D %}
+/* C-style block comment */
+/** C-style documentation */
+/+ D nesting block comment +/
+/++ D nesting documentation +/
+// C-style line comment
+/// C-style line documentation
+{% endhighlight %}
+
+Python doesn't have multi-line comments at all, but the behavior can be replicated with multi-line strings. Unfortunately these are always going to be documentation, so there's no way to comment out a function without generating confusing documentation.
+
+{% highlight python %}
+# Python comment
+""" unevaluated multi-line python string
+serves as documentation """
+{% endhighlight %}
+
+What if there were just two ways to denote comments, without nesting problems or extraneous characters. What python (and haskell) gets wrong is that multi-line comments are important and easy with a whitespace-delimited language.
+
+{% highlight python %}
+# Delight comment
+	continues on multiple lines
+	just by using indentation!
+
+#: Delight documentation comment
+	Just uses one extra character.
+
+x = 5 # Of course it works inline too
+{% endhighlight %}
+
+Let me know what you think!
