@@ -34,7 +34,7 @@ What if there were just two ways to denote comments, without nesting problems or
 	continues on multiple lines
 	just by using indentation!
 
-#: Delight documentation comment
+#. Delight documentation comment
 	Just uses one extra character.
 
 x = 5 # Of course it works inline too
