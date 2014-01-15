@@ -10,16 +10,16 @@ tags:
 Parsing comments turned out to be a lot harder than I thought it would be. But it's done now. The next task is conditionals, which will look quite similar to pythonic conditionals, except for one slight change.
 
 {% highlight python %}
-if x equals y or y equals z:
+if x equal to y or y not equal to z:
 	x = z
-else if x less than y and y greater than z:
+else if x not less than y and y more than z:
 	x = y + z
-else if x in 0 .. 12:
+else if x in 0 .. 12 or x in [ 0, 2, 5 ]:
 	x = 13
 else:
 	x = 1
 {% endhighlight %}
 
-Instead of using the confusing == operator, I'll just use the keyword equals. There should also be keywords for < and > for consistency and readability since < and > can be confusing. The only questions I have are: "How useful are '<=' and '>='? Can I leave them out without ruining the language?"
+Instead of using the confusing '==' operator, I'll just use the keywords 'equal to'. I still sometimes write '=' instead of '==' which is a hard bug to track down. Also, '<' and '>' become 'less than' and 'more than' for consistency and readability since '<' and '>' can be confusing (at least for me). '>=' and '<=' become 'not less than' and 'not more than' respectively, which are arguably clearer.
 
 Let me know what you think!
