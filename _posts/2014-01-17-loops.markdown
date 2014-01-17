@@ -1,0 +1,28 @@
+---
+layout: post
+title: Loops
+date: 17 Jan 2014 21:36:00
+tags:
+- delight
+- loops
+---
+
+Loops in delight will look a lot like python loops. I'll also mention arrays, since for loops in delight will primarily iterate over arrays. The only real difference from D is that in multidimentional array declarations and references, commas are used.
+
+{% highlight python %}
+string[string] array = ["foo":"bar", "blah":"blah"]
+int[, 3] ints = [[2, 3], [3, 4], [4, 5]]
+ints[2, 1] = ints[2, 0] + 10
+
+for i in 0 .. 10:
+	x += i
+
+for key, item in array:
+	if key equal to "blah" and item equal to "blah":
+		writeln( "found 'blah'" )
+
+while x less than y:
+	x *= 10
+{% endhighlight %}
+
+Nothing too surprising here.
