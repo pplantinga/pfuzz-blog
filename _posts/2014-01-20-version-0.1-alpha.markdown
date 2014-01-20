@@ -1,0 +1,32 @@
+---
+layout: post
+title: Version 0.1-alpha
+date: 20 Jan 2014 14:47:00
+tags:
+- delight
+- release
+---
+
+I just tagged my first release in Delight! And in Github for that matter.
+
+Version 0.1-alpha is still pre-release, but it's a step in the right direction. It includes support for classes and templates.
+
+{% highlight D %}
+class woodchucks:
+	int teeth = 2
+
+	method bite( int tree ):
+		return tree - teeth
+
+class woodchucks(T):
+	T teeth
+
+	method bite( T tree ):
+		return tree - teeth
+
+procedure main:
+	woodchucks w = new woodchuck()
+	woodchucks!int wi = new woodchuck!int()
+{% endhighlight %}
+
+Check it out at [github.com/pplantinga/delight](http://github.com/pplantinga/delight) and report any bugs!
