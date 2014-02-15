@@ -17,3 +17,5 @@ if 4 in [0, 2, 4]:
 Walter Bright (the creator of D) didn't include this operator, since "in" is an O(n) operation. It's fairly easy to replicate with standard library functions, such as canFind. It's frustrating though that there isn't one that works with all foreach-able types (not even all arrays). 
 
 I've decided to include this operator, even though it may slow down performance a bit due to overuse. It's just so handy to have!
+
+Another function that D didn't include is a print statement. I added this to delight as well, since it is so common.
