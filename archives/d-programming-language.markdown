@@ -1,7 +1,7 @@
 ---
 layout: tag-archive
 title: "D Programming Language"
-archive-tag: 'static webpages'
+archive-tag: 'd programming language'
 ---
 
 I've gotta have a page about my favorite programming language. Seriously this one is awesome. Here is a sample code block, taken from [dlang.org](http://dlang.org).
