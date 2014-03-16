@@ -4,41 +4,60 @@ title: "Delight Programming Language"
 archive-tag: 'delight'
 ---
 
-This language aims to provide many of the awesome features of the [D programming language](/archives/d-programming-language.html) but with syntax akin to that of [python](/archives/python.html). Here's a sample:
+This document, besides recording all posts about Delight, also aims to give a fuller description of the language than the one at [the github page](http://github.org/pplantinga/delight).
+
+Delight aims to provide the best features of the [D programming language](/archives/d-programming-language.html) but with syntax akin to that of [Python](/archives/python.html). Here's a sample:
 
 {% highlight python %}
 
-function add( T a, b -> T ):
-	return a + b
+	#. Block comment scope is determined
+		by indentation
 
-procedure main:
+	function add( T a, b -> T ):
+		return a + b
+	unittest:
+		assert add( 1, 2 ) equal to 3
+		assert add( 1.0, 2.0 ) equal to 3.0
 
-	# Dictionary
-	auto a = ["a": 1, "b": 2, "c": 3]
+	procedure main:
 
-	auto x
+		# Dictionary
+		auto a = ["a": 1, "b": 2, "c": 3]
 
-	# Pythonic for loop
-	for key, item in a:
+		auto x
 
-		# Switch requires no "break"
-		switch key:
-			case "a":
-				x += add( item, 4 )
+		# Pythonic for loop
+		for key, item in a:
 
-			# b and d lumped together
-			case "b":
-			case "d":
-				x += item - 1
-			default:
-				x = 5 + item
-	
-	# Conditional
-	if x less than 20 and x in 5 .. 22:
-		x *= 2
+			# Switch requires no "break"
+			switch key:
+				case "a":
+					x += add( item, 4 )
 
-	# print statement
-	print x
+				# b and d lumped together
+				case "b":
+				case "d":
+					x += item - 1
+
+				default:
+					x = 5 + item
+		
+		# Conditional
+		if x less than 20 and x in [ 2, 4, 6, 8 ]:
+			x *= 2
+
+		# use () to wrap multi-line expressions
+			making sure to end at the same indentation level as you started
+		else if (
+			x in [ 2, 3, 5 ]
+			and x not in [ 4, 6, 7 ]
+		):
+			x -= 2
+
+		# print statement
+		print x
 {% endhighlight %}
 
-Read [dlang.org](http://dlang.org) for the advantages of using D, many of which apply to delight, since delight uses dmd to compile the code. Delight is just an alternative syntax.
+Read [dlang.org](http://dlang.org) for the advantages of using D, many of which apply to Delight, since Delight is just an alternative syntax. If there's some feature of D that you feel should be in Delight, but isn't, let me know and we'll see if we can add it!
+
+The features are mostly recorded in the blog posts listed below:
