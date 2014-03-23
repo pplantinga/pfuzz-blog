@@ -9,11 +9,9 @@ tags:
 
 I'm delighted to inform you that [delight preprocessor](http://github.com/pplantinga/delight) can now convert a "Hello, world!" program into D code!
 
-{% highlight D %}
-import std.stdio
-
-void main():
-	writeln( "Hello, world!" )
+{% highlight python %}
+procedure main:
+	print "Hello, world!"
 {% endhighlight %}
 
 I'm still debating many of the finer points of the language, so expect another post soon asking for your opinions.
