@@ -17,8 +17,13 @@ I'm finally to the end of both the teaching and the refactoring, so now it's bac
 function add(int a, b -> int):
 	return a + b
 
+class C:
+	method subtract(T a, b -> T):
+		return a - b
+
 procedure main:
-	int c = add(a, b)
+	int c = add(1, 2)
+	int d = C.subtract(2, 3)
 {% endhighlight %}
 
 Since D has type inference, you'll be able to leave off the return type. And if you replace the "int" with "T" it will automatically become a template.

@@ -54,8 +54,13 @@ Let me know what you think!
 function add(int a, b -> int):
 	return a + b
 
+class C:
+	method subtract(T a, b -> T):
+		return a - b
+
 procedure main:
-	int c = add(a, b)
+	int c = add(1, 2)
+	int d = C.subtract(2, 3)
 {% endhighlight %}
 
 I kept parentheses around function calls because the spaces don't make it clear what is inside the function and what is not. Also, I'm trying to stay just somewhat faithful to python/D syntax. See post on [doing too much](/2014/01/11/doing-too-much.html) for more details.
