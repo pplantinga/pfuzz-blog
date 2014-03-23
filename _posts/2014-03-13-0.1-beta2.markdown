@@ -16,9 +16,9 @@ Besides all the bugfixes, I also added a few new features:
 {% highlight D %}
 
 function doit( int a, b -> int ):
-in:
+enter:
 	assert a less than b
-out result:
+exit result:
 	assert result more than 0
 body:
 	return a / b
