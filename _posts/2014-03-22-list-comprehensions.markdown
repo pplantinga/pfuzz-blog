@@ -24,3 +24,5 @@ This'll spit out:
 	[ 4, 8, 12, 16 ]
 
 Pretty sweet, eh?
+
+One last thing to note: the `0 .. 10 by 2` part is just the range `[0, 2, 4, 6, 8]`.
