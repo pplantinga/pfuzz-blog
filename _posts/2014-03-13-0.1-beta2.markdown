@@ -32,4 +32,4 @@ procedure main:
 
 The first method demonstrates [contract programming](http://dlang.org/dbc.html). I like this feature of D, since it is a clean way to ensure that the data the function takes and spits out are sanitary. Also, the code isn't compiled into a production version, meaning it shouldn't slow down performance either.
 
-Another feature is the "has key" operator. This is used to check if an associative array has a certain key. In D this operator is called "in" but I'm already using that in the python-esque way to check if an element exists in any kind of range-compatible structure.
+Another feature is the "has key" operator. This is used to check if an associative array has a certain key. In D this operator is called "in" but I'm already using that in the Python-esque way to check if an element exists in any kind of range-compatible structure.

@@ -7,7 +7,7 @@ tags:
 - hello world
 ---
 
-I'm delighted to inform you that [delight preprocessor](http://github.com/pplantinga/delight) can now convert a "Hello, world!" program into D code!
+I'm delighted to inform you that [Delight preprocessor](http://github.com/pplantinga/delight) can now convert a "Hello, world!" program into D code!
 
 {% highlight python %}
 procedure main:

@@ -7,7 +7,7 @@ tags:
 - python
 ---
 
-"in" is just one small word, but it can make a big difference. In python it is easy to find stuff in arrays, since the language includes the "in" operator:
+The word "in" is just one small word, but it can make a big difference. In Python it is easy to find stuff in arrays, since the language includes the "in" operator:
 
 {% highlight python %}
 if 4 in [0, 2, 4]:
@@ -18,4 +18,4 @@ Walter Bright (the creator of D) didn't include this operator, since "in" is an 
 
 I've decided to include this operator, even though it may slow down performance a bit due to overuse. It's just so handy to have!
 
-Another function that D didn't include is a print statement. I added this to delight as well, since it is so common.
+Another function that D didn't include is a print statement. I added this to Delight as well, since it is so common.

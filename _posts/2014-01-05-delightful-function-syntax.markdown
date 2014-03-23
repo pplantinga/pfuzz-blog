@@ -63,4 +63,4 @@ procedure main:
 	int d = C.subtract(2, 3)
 {% endhighlight %}
 
-I kept parentheses around function calls because the spaces don't make it clear what is inside the function and what is not. Also, I'm trying to stay just somewhat faithful to python/D syntax. See post on [doing too much](/2014/01/11/doing-too-much.html) for more details.
+I kept parentheses around function calls because the spaces don't make it clear what is inside the function and what is not. Also, I'm trying to stay just somewhat faithful to Python/D syntax. See post on [doing too much](/2014/01/11/doing-too-much.html) for more details.

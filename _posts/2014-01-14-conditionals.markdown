@@ -7,7 +7,7 @@ tags:
 - conditionals
 ---
 
-Parsing comments turned out to be a lot harder than I thought it would be. But it's done now. The next task is conditionals, which will look quite similar to pythonic conditionals, except for one slight change.
+Parsing comments turned out to be a lot harder than I thought it would be. But it's done now. The next task is conditionals, which will look quite similar to Pythonic conditionals, except for one slight change.
 
 {% highlight python %}
 if x equal to y or y not equal to z:

@@ -27,7 +27,7 @@ Python doesn't have multi-line comments at all, but the behavior can be replicat
 serves as documentation """
 {% endhighlight %}
 
-What if there were just two ways to denote comments, without nesting problems or extraneous characters. What python (and haskell) gets wrong is that multi-line comments are important and easy with a whitespace-delimited language.
+What if there were just two ways to denote comments, without nesting problems or extraneous characters. What Python (and Haskell) gets wrong is that multi-line comments are important and easy with a whitespace-delimited language.
 
 {% highlight python %}
 # Delight comment

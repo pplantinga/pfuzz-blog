@@ -7,7 +7,7 @@ tags:
 - loops
 ---
 
-Loops in delight will look a lot like python loops. I'll also mention arrays, since for loops in delight will primarily iterate over arrays. The only real difference from D is that in multidimentional array declarations and references, commas are used.
+Loops in Delight will look a lot like Python loops. I'll also mention arrays, since for loops in Delight will primarily iterate over arrays. The only real difference from D is that in multidimentional array declarations and references, commas are used.
 
 {% highlight python %}
 string[string] array = ["foo":"bar", "blah":"blah"]
