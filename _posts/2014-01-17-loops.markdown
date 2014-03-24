@@ -10,13 +10,13 @@ tags:
 Loops in Delight will look a lot like Python loops. I'll also mention arrays, since for loops in Delight will primarily iterate over arrays. The only real difference from D is that in multidimentional array declarations and references, commas are used.
 
 {% highlight python %}
-string[string] array = ["foo":"bar", "blah":"blah"]
 int[, 3] ints = [[2, 3], [3, 4], [4, 5]]
 ints[2, 1] = ints[2, 0] + 10
 
 for i in 0 .. 10:
 	x += i
 
+auto array = ["foo":"bar", "blah":"blah"]
 for key, item in array:
 	if key equal to "blah" and item equal to "blah":
 		writeln( "found 'blah'" )
@@ -26,3 +26,24 @@ while x less than y:
 {% endhighlight %}
 
 Nothing too surprising here.
+
+**Edit** Now there are more loop-able features!
+
+{% highlight python %}
+	print 0 .. 10 by 2
+	# prints [0, 2, 4, 6, 8]
+
+	# Works for decrementing too
+	auto vals = [0, 1, 2, 3, 4, 5]
+	for i in vals.length - 1 .. 0 by -1
+		vals[i] = vals[i - 1]
+
+	# Also, list comprehensions!
+	for i in { 2 * x for x in 0 .. 10 by 2 where x ^ 2 more than 3 }:
+		print i
+
+	# 4
+	# 8
+	# 12
+	# 16
+{% endhighlight %}
