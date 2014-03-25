@@ -9,7 +9,9 @@ tags:
 - quoridor
 ---
 
-I just succeeded in getting Quoridor to compile and run. Quoridor is now Delightful :) As a celebration, and because I found so many bugs in the process, I released a second beta. Hopefully we're nearing the version 0.1 release!
+**Edit:** Contract programming has been removed from Delight in favor of scope guards. If you really want it back in the language, let me know and we'll talk about it.
+
+**Original:** I just succeeded in getting Quoridor to compile and run. Quoridor is now Delightful :) As a celebration, and because I found so many bugs in the process, I released a second beta. Hopefully we're nearing the version 0.1 release!
 
 Besides all the bugfixes, I also added a few new features:
 
