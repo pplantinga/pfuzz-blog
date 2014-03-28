@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Version 0.1-beta.2
+title: Contract Programming
 date: 13 Mar 2014 14:18:00
 tags:
 - delight
