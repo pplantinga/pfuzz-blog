@@ -56,6 +56,11 @@ Delight aims to provide the best features of the [D programming language](/archi
 
 		# print statement
 		print x
+
+		# List Comprehesion
+		print { i * 2 for i in 0 .. 5 where i ^ 2 less than 5 }
+		# prints [0, 2, 4]
+
 {% endhighlight %}
 
 Read [dlang.org](http://dlang.org) for the advantages of using D, many of which apply to Delight, since Delight is just an alternative syntax. If there's some feature of D that you feel should be in Delight, but isn't, let me know and we'll see if we can add it!
