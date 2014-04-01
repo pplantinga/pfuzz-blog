@@ -16,13 +16,29 @@ April Fools!
 But seriously, [Nimrod](http://nimrod-lang.org) is awesome. It has python-like syntax, but is by default translated into C code and compiled to a very efficient binary. It can also be translated into C++ or Objective-C, among many other options.
 
 Some features that I think are great:
+
 * named parameters that are also non-mutable by default. This leads to self-documenting and more efficient code. I like it because that's normally what I need and a simple compiler error can help me choose which ones should be mutable.
 * Clear variable declaration: const, let, and var. D has const, immutable, static, and any combination thereof. I don't understand what they all mean!
 * Objects don't have methods. I think I like this, since it makes an object easier to understand.
 
 Some features I wish were built-in:
+
 * List comprehensions
 * Hash tables
 
 You should check it out. It definitely has better docs and support than my language does at the moment. And probably fewer bugs! :P
 
+Example from the Nimrod homepage:
+
+{% highlight nimrod %}
+# compute average line length
+var count = 0
+var sum = 0
+
+for line in stdin.lines:
+  count += 1
+  sum += line.len
+
+echo "Average line length: ",
+  if count > 0: sum / count else: 0
+{% endhighlight %}
