@@ -1,7 +1,7 @@
 ---
 layout: tag-archive
 title: "Windows 8"
-archive-tag: 'windows-8'
+archive-tag: 'windows 8'
 ---
 
 In general, people are not a huge fan of the [Windows 8](http://windows.microsoft.com/en-US/windows-8/meet) operating system.
