@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reason #57 I Prefer Linux to Windows
+title: Reason no. 57 I Prefer Linux to Windows
 date: 8 July 2014 15:01:00
 tags:
 - linux
