@@ -2,4 +2,4 @@ name: P-Fuzz
 description: A tech blog by Peter Massey-Plantinga
 url: http://pplantinga.github.io
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
